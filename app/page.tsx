@@ -5,7 +5,9 @@ import CardArticle from "./components/CardArticle";
 import articles from "./../public/articles.json";
 
 export const metadata: Metadata = {
-  title: "Terrain confus",
+  title: {
+    default: "Terrain confus",
+  },
   description: "Un blog à propos du terrain confus.",
 };
 export default function Home() {
@@ -15,22 +17,14 @@ export default function Home() {
         <h1 className={style.h1}>Terrain confus</h1>
         <Image
           priority
-          src="/favicon.svg"
+          src="/tree.svg"
           height={32}
           width={32}
           alt="Brouteur de terrain confus"
         />
       </div>
       <p className={style.description}>A blog about ground and confusion.</p>
-      <div className={style.image}>
-        <Image
-          src="/terrain-confus.png"
-          alt="Terrain confus"
-          width={500}
-          height={200}
-          className={style.logo}
-        />
-      </div>
+
       <h2 className={style.h2}>Articles</h2>
       <div className={style.articleContainer}>
         {articles
@@ -38,6 +32,7 @@ export default function Home() {
             const date = new Date(article.publication_date);
             return date < new Date();
           })
+          .sort((a, b) => new Date(b.publication_date).getTime() - new Date(a.publication_date).getTime())
           .slice(0, 4)
           .map((article) => (
             <CardArticle

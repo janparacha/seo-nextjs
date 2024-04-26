@@ -16,7 +16,7 @@ export default function CardArticle({ article }: { article: Article }) {
   return (
     <article>
       <Image
-        src="/favicon.svg"
+        src="/tree.svg"
         alt="Description"
         width={50}
         height={50}
