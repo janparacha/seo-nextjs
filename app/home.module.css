@@ -1,0 +1,33 @@
+.h1{
+  text-align: center;
+  display: inline;
+}
+
+.h1Container{
+  display: flex;
+  align-items: center;
+}
+
+.logo{
+  vertical-align: bottom;
+}
+.h2{
+  text-align: center;
+}
+
+.description{
+  text-align: center;
+}
+
+.image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.articleContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

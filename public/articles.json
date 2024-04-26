@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "title": "Les bienfaits de la méditation",
+    "content": "La méditation offre de nombreux avantages pour la santé mentale et physique. Elle peut réduire le stress, améliorer la concentration et favoriser un sentiment de bien-être général.",
+    "description": "Découvrez les multiples bienfaits de la méditation et comment elle peut améliorer votre vie quotidienne.",
+    "meta": {
+      "keywords": ["méditation", "bien-être", "santé mentale", "concentration", "stress"],
+      "description": "Découvrez les bienfaits de la méditation pour la santé mentale et physique."
+    },
+    "publication_date": "2024-04-26"
+  },
+  {
+    "id": 2,
+    "title": "Les secrets d'une alimentation saine",
+    "content": "Une alimentation saine et équilibrée est essentielle pour maintenir une bonne santé. Elle devrait inclure une variété de fruits, légumes, protéines maigres et grains entiers.",
+    "description": "Apprenez comment adopter une alimentation saine et les avantages pour votre bien-être général.",
+    "meta": {
+      "keywords": ["alimentation saine", "nutrition", "santé", "bien-être", "aliments équilibrés"],
+      "description": "Découvrez les secrets d'une alimentation saine et ses avantages pour la santé."
+    },
+    "publication_date": "2024-04-25"
+  },
+  {
+    "id": 3,
+    "title": "Les bienfaits de l'exercice physique",
+    "content": "L'exercice régulier est crucial pour maintenir une bonne santé. Il peut renforcer les muscles, améliorer la santé cardiaque et augmenter l'énergie.",
+    "description": "Explorez les nombreux avantages de l'exercice physique et comment intégrer une routine d'entraînement dans votre vie.",
+    "meta": {
+      "keywords": ["exercice physique", "fitness", "santé", "bien-être", "activité physique"],
+      "description": "Découvrez les bienfaits de l'exercice physique pour votre santé et votre bien-être."
+    },
+    "publication_date": "2024-04-24"
+  },
+  {
+    "id": 4,
+    "title": "Les techniques pour mieux dormir",
+    "content": "Un sommeil de qualité est essentiel pour la santé et le bien-être. Apprenez des techniques simples pour améliorer la qualité de votre sommeil et vous réveiller rafraîchi.",
+    "description": "Découvrez des astuces pour améliorer la qualité de votre sommeil et profiter de nuits plus reposantes.",
+    "meta": {
+      "keywords": ["sommeil", "insomnie", "bien-être", "santé", "hygiène du sommeil"],
+      "description": "Découvrez des techniques simples pour améliorer la qualité de votre sommeil et vous réveiller rafraîchi."
+    },
+    "publication_date": "2024-04-23"
+  },
+  {
+    "id": 5,
+    "title": "Les conseils pour gérer le stress",
+    "content": "Le stress est un aspect inévitable de la vie, mais il existe des moyens efficaces de le gérer. Apprenez des techniques de gestion du stress pour améliorer votre bien-être émotionnel.",
+    "description": "Explorez des conseils pratiques pour faire face au stress quotidien et améliorer votre santé mentale.",
+    "meta": {
+      "keywords": ["stress", "gestion du stress", "bien-être", "santé mentale", "relaxation"],
+      "description": "Découvrez des conseils pratiques pour gérer le stress et améliorer votre bien-être émotionnel."
+    },
+    "publication_date": "2024-04-22"
+  },
+  {
+    "id": 6,
+    "title": "Les avantages de la pratique régulière du yoga",
+    "content": "Le yoga offre de nombreux avantages pour le corps et l'esprit. Il peut améliorer la flexibilité, réduire le stress et favoriser la relaxation.",
+    "description": "Découvrez les multiples bienfaits du yoga pour la santé physique et mentale.",
+    "meta": {
+      "keywords": ["yoga", "bien-être", "santé", "relaxation", "flexibilité"],
+      "description": "Découvrez les avantages de la pratique régulière du yoga pour votre santé et votre bien-être."
+    },
+    "publication_date": "2024-04-21"
+  }
+]
