@@ -1,3 +1,4 @@
+
 .h1{
   text-align: center;
   display: inline;
@@ -25,5 +26,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 

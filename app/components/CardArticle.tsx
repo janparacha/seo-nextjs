@@ -1,7 +1,10 @@
 import { Metadata } from "next";
 import Image from "next/image";
+import style from "./cardArticle.module.css"
+import Link from "next/link";
 
 export interface Article {
+  id:number;
   title: string;
   content: string;
   publication_date: string;
@@ -14,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function CardArticle({ article }: { article: Article }) {
   return (
-    <article>
+    <article className={style.article}>
       <Image
         src="/tree.svg"
         alt="Description"
@@ -22,7 +25,7 @@ export default function CardArticle({ article }: { article: Article }) {
         height={50}
       ></Image>
       <h3>{article.title}</h3>
-      <p>{article.content}</p>
+      <p className={style.content}>{article.content.substring(0,130)}<Link href={`/articles/${article.id}`}>[...]</Link></p>
       <p>{article.publication_date}</p>
     </article>
   );

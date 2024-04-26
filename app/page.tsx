@@ -6,6 +6,7 @@ import articles from "./../public/articles.json";
 
 export const metadata: Metadata = {
   title: {
+    template: "terrain-confus",
     default: "Terrain confus",
   },
   description: "Un blog à propos du terrain confus.",
