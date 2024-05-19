@@ -18,7 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...articles.map((article) => ({
       url: `https://confus-terrain.fr/articles/${article.id}`,
       lastModified: new Date(article.publication_date),
-      changeFrequency: "daily",
+      changeFrequency: "daily" as const,
       priority: 0.5,
     })),
   ];

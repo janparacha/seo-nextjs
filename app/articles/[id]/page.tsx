@@ -12,11 +12,6 @@ export const metadata: Metadata = {
     publishedTime: "2023-01-01T00:00:00.000Z",
     authors: ["Jan", "Nicolas"],
   },
-  twitter: {
-    handle: "@terrainconfus",
-    site: "@terrainconfus",
-    cardType: "summary_large_image",
-  },
 };
 
 export default function Article({ params }: { params: { id: string } }) {
