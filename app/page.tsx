@@ -5,11 +5,62 @@ import CardArticle from "./components/CardArticle";
 import articles from "./../public/articles.json";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://confus-terrain.fr"),
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-US": "/en-US",
+      "fr-FR": "/fr-FR",
+    },
+  },
   title: {
     template: "terrain-confus",
     default: "Terrain confus",
   },
   description: "Un blog à propos du terrain confus.",
+  generator: "Jan and Nicolas",
+  applicationName: "blog terrain confus",
+  referrer: "origin-when-cross-origin",
+  keywords: ["terrain", "confus", "terrains", "confusion", "ground"],
+  authors: [{ name: "Jan" }, { name: "Nicolas", url: "https://confus-terrain.fr" }],
+  creator: "Jan and Nicolas",
+  publisher: "Jan and Nicolas",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  openGraph: {
+    title: "confus-terrain.js",
+    description: "Le blog des terrains confus",
+    url: "https://confus-terrain.fr",
+    siteName: "terrain-confus.fr",
+    images: [
+      {
+        url: "https://storage.gra.cloud.ovh.net/v1/AUTH_e0b83750570d4ff1986fe199b41300e4/kimono/a2a6e279ddaec4753d3d6b8a990618633106469e/700x1000?width=700&height=1000", // Must be an absolute URL
+        width: 800,
+        height: 600,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Next.js",
+    description: "The React Framework for the Web",
+    siteId: "1467726470533754880",
+    creator: "@mussbla",
+    creatorId: "1467726470533754880",
+    images: [
+      "https://storage.gra.cloud.ovh.net/v1/AUTH_e0b83750570d4ff1986fe199b41300e4/kimono/a2a6e279ddaec4753d3d6b8a990618633106469e/700x1000?width=700&height=1000",
+    ],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+  },
 };
 export default function Home() {
   return (
@@ -39,6 +90,7 @@ export default function Home() {
             <CardArticle
               key={article.id}
               article={article}
+              full={false}
             />
           ))}
       </div>
