@@ -1,25 +1,32 @@
-import { Metadata } from "next";
 import articles from "./../../../public/articles.json";
-
-export const metadata: Metadata = {
-  title: "Terrain confus",
-  description: "A blog sur les terrain confus.",
-  keywords: ["terrain", "confus", "blog"],
-  openGraph: {
-    title: "Terrain confus",
-    description: "Le meilleur blog sur les terrains confus",
-    type: "article",
-    publishedTime: "2023-01-01T00:00:00.000Z",
-    authors: ["Jan", "Nicolas"],
-  },
-};
+import type { Metadata } from 'next'
+ 
+type Props = {
+  params: { id: string }
+  searchParams: { [key: string]: string | string[] | undefined }
+}
+ 
+export async function generateMetadata(
+  { params }: Props,
+): Promise<Metadata> {
+  const id = params.id
+  const article = articles.find((article) => article.id.toString() === id);
+ 
+  return {
+    title: article?.title,
+    keywords: article?.meta?.keywords,
+    description: article?.meta?.description,
+    authors: article?.authors,
+  }
+}
 
 export default function Article({ params }: { params: { id: string } }) {
   const article = articles.find((article) => article.id.toString() === params.id);
   return article ? (
     <main>
       <div>
-        <h1>Article numero {article.id}</h1>
+        <h1>{article.title}</h1>
+        <span>{article.publication_date}</span>
         <p>{article.content}</p>
       </div>
     </main>
