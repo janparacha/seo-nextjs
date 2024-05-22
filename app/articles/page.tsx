@@ -3,7 +3,7 @@ import articles from "./../../public/articles.json";
 import CardArticle from "../components/CardArticle";
 
 export const metadata: Metadata = {
-  title: "Terrain entrant",
+  title: "Articles",
   description: "A blog about ground and confusion.",
 };
 
