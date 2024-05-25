@@ -3,22 +3,27 @@ import type { Metadata } from "next";
 import style from "./layout.module.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://confus-terrain.fr"),
   title: {
-    default: "Terrain confus",
-    template: " %s - Terrain confus",
+    default: "Terrain confus - Le blog sur les terrains confus et l'immobilier",
+    template: " Terrain confus - %s",
   },
-  description: "Un blog à propos du terrain confus. Venez apprendre l'immobilier et le vélo !",
-  generator: "Jan and Nicolas",
-  applicationName: "blog terrain confus",
+  description:
+    "Un blog à propos du terrain confus. Venez en apprendre plus sur l'immobilier et les terrains confus. Vous serez surpris par ce que l'immobilier peut vous offrir",
+  generator: "Next.js",
+  applicationName: "Le blog des terrains confus",
   referrer: "origin-when-cross-origin",
   keywords: ["terrain", "confus", "terrains", "confusion", "ground", "immobilier", "velo"],
-  authors: [{ name: "Jan" }, { name: "Nicolas", url: "https://confus-terrain.fr" }],
+  authors: [
+    { name: "Jan", url: "https://confus-terrain.fr" },
+    { name: "Nicolas", url: "https://confus-terrain.fr" },
+  ],
   creator: "Jan and Nicolas",
   publisher: "Jan and Nicolas",
   formatDetection: {
-    email: true,
-    address: true,
-    telephone: true,
+    email: false,
+    address: false,
+    telephone: false,
   },
   openGraph: {
     title: "confus-terrain.js",
@@ -32,7 +37,7 @@ export const metadata: Metadata = {
         height: 600,
       },
     ],
-    locale: "en_US",
+    locale: "fr_FR",
     type: "website",
   },
   twitter: {
