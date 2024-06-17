@@ -55,7 +55,7 @@ export default function Article({ params }: { params: { id: string } }) {
     <main>
       <div>
         <h1>{article.title}</h1>
-        <span>{article.publication_date}</span>
+        <span>{article.publication_date.split("T")[0]}</span>
         <p>{article.content}</p>
       </div>
     </main>

@@ -38,7 +38,7 @@ export default function CardArticle({ full, article }: { full: boolean; article:
         </p>
       )}
 
-      <p>{article.publication_date}</p>
+      <p>{article.publication_date.split("T")[0]}</p>
     </article>
   );
 }
