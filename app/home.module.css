@@ -1,31 +1,30 @@
-
-.h1{
+.h1 {
   text-align: center;
   display: inline;
 }
 
-.h1Container{
+.h1Container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
 
-.logo{
+.logo {
   vertical-align: bottom;
 }
-.h2{
+
+.h2 {
   text-align: center;
 }
 
-.description{
+.description {
   text-align: center;
 }
 
-.articleContainer{
+.articleContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-
