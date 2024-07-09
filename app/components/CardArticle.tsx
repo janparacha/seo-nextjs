@@ -15,6 +15,14 @@ export const metadata: Metadata = {
   description: "A blog about ground and confusion.",
 };
 
+function slugify(title: string) {
+  return title
+    .toLowerCase() 
+    .replace(/[^a-z0-9\s-]/g, '') 
+    .replace(/\s+/g, '-') 
+    .replace(/-+/g, '-'); 
+}
+
 export default function CardArticle({ full, article }: { full: boolean; article: Article }) {
   return (
     <article className={style.article}>
@@ -29,12 +37,12 @@ export default function CardArticle({ full, article }: { full: boolean; article:
       {full ? (
         <p className={style.content}>
           {article.content}
-          <Link href={`/articles/${article.id}`}>[...]</Link>
+          <Link href={`/articles/${slugify(article.title)}`}>[...]</Link>
         </p>
       ) : (
         <p className={style.content}>
           {article.content.substring(0, 130)}
-          <Link href={`/articles/${article.id}`}>[...]</Link>
+          <Link href={`/articles/${slugify(article.title)}`}>[...]</Link>
         </p>
       )}
 

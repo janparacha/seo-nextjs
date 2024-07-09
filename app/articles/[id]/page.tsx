@@ -1,14 +1,22 @@
 import articles from "./../../../public/articles.json";
 import type { Metadata } from "next";
 
+function slugify(title: string) {
+  return title
+    .toLowerCase() 
+    .replace(/[^a-z0-9\s-]/g, '') 
+    .replace(/\s+/g, '-') 
+    .replace(/-+/g, '-'); 
+}
+
 type Props = {
   params: { id: string };
   searchParams: { [key: string]: string | string[] | undefined };
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const id = params.id;
-  const article = articles.find((article) => article.id.toString() === id);
+  const title = params.id;
+  const article = articles.find((article) => slugify(article.title) === title);
 
   return {
     title: article?.title,
@@ -50,7 +58,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default function Article({ params }: { params: { id: string } }) {
-  const article = articles.find((article) => article.id.toString() === params.id);
+  const article = articles.find((article) => slugify(article.title) === params.id);
   return article ? (
     <main>
       <div>
