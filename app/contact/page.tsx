@@ -21,7 +21,7 @@ const Contact = () => {
 
         <button type="submit">Envoyer</button>
       </form>
-    </div>
+    </div> 
   );
 };
 
