@@ -10,7 +10,7 @@ export default function Home() {
         <h1 className={style.h1}>Terrain confus</h1>
         <Image
           priority
-          src="/tree.svg"
+          src="../public/tree.svg"
           height={32}
           width={32}
           alt="Brouteur de terrain confus"
