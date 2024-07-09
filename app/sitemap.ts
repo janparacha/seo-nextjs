@@ -1,6 +1,14 @@
 import type { MetadataRoute } from "next";
 import articles from "../public/articles.json";
 
+function slugify(title: string) {
+  return title
+    .toLowerCase() 
+    .replace(/[^a-z0-9\s-]/g, '') 
+    .replace(/\s+/g, '-') 
+    .replace(/-+/g, '-'); 
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
@@ -16,7 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     ...articles.map((article) => ({
-      url: `https://confus-terrain.fr/articles/${article.id}`,
+      url: `https://confus-terrain.fr/articles/${slugify(article.title)}`,
       lastModified: new Date(article.publication_date),
       changeFrequency: "daily" as const,
       priority: 0.5,
