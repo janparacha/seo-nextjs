@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: "article",
       publishedTime: article?.publication_date,
       authors: article?.openGraphAuthors,
-      url: `https://confus-terrain.fr/articles/${id}`,
+      url: `https://confus-terrain.fr/articles/${title}`,
       siteName: "confus-terrain.fr",
       images: [
         {
