@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Next.js",
+    title: "Terrain Confus",
     description: "The React Framework for the Web",
     siteId: "1467726470533754880",
     creator: "@mussbla",
