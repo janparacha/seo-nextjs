@@ -16,13 +16,15 @@ export default function Home() {
           alt="Brouteur de terrain confus"
         />
       </div>
-      <Image
-          priority
-          src="/terrain-confus-maison.webp"
-          height={427}
-          width={640}
-          alt="Maison sur un terrain confus"
-        />
+      <div className={style.backgroundImage}>
+        <Image
+            priority
+            src="/terrain-confus-maison.webp"
+            height={427}
+            width={640}
+            alt="Maison sur un terrain confus"
+          />
+      </div>
       <h2>Les articles du blog &quot;Terrains Confus&quot; : Une exploration des zones d&apos;incertitude de la vie</h2>
       <p>
         Le blog &quot;Terrains Confus&quot; propose une série d&apos;articles captivants qui plongent dans les aspects
