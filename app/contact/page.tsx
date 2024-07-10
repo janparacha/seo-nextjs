@@ -30,7 +30,6 @@ const Contact = () => {
         <textarea
           id="message"
           name="message"
-          rows="4"
           required
         ></textarea>
 
