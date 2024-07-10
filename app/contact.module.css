@@ -22,12 +22,12 @@
     align-items: center;
 }
 
-form label {
+.form label {
     margin-top: 10px;
     font-size: 1rem;
 }
 
-input, textarea {
+.input textarea {
     width: 100%;
     max-width: 400px;
     padding: 10px;
@@ -36,7 +36,7 @@ input, textarea {
     border-radius: 4px;
 }
 
-button {
+.button {
     margin-top: 15px;
     padding: 10px 20px;
     font-size: 1rem;
@@ -47,7 +47,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.button:hover {
     background-color: #005bb5;
 }
   

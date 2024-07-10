@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import style from "./cardArticle.module.css";
+import style from "../cardArticle.module.css";
 import Link from "next/link";
 
 export interface Article {
@@ -17,10 +17,10 @@ export const metadata: Metadata = {
 
 function slugify(title: string) {
   return title
-    .toLowerCase() 
-    .replace(/[^a-z0-9\s-]/g, '') 
-    .replace(/\s+/g, '-') 
-    .replace(/-+/g, '-'); 
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, "")
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-");
 }
 
 export default function CardArticle({ full, article }: { full: boolean; article: Article }) {
