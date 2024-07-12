@@ -35,13 +35,15 @@ export default function CardArticle({ full, article }: { full: boolean; article:
       <h3>{article.title}</h3>
 
       {full ? (
-        <p className={style.content}>
+        <p>
           {article.content}
+          <br />
           <Link href={`/articles/${slugify(article.title)}`}>[...]</Link>
         </p>
       ) : (
-        <p className={style.content}>
+        <p>
           {article.content.substring(0, 130)}
+          <br />
           <Link href={`/articles/${slugify(article.title)}`}>[...]</Link>
         </p>
       )}
